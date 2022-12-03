@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios con condicionales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ejercicios con condicionales</h1>
+        <p>1 Un número primo es una cantidad entera positiva únicamente divisible por uno o por sí mismo. <br> Calcular y tabular los n primeros números primos.</p>
+        <form class="row g-3">
+            <div class="col-auto">
+                <label for="esPrimo" class="visually-hidden"></label>
+                <button class="btn btn-success mb-3" id="esPrimo" onclick="primoEnRangoDado()">Calcular primos en rango</button>
+            </div> 
+            <div>
+                <ul id="listaPrimos"></ul>
+            </div>
+            <p>2. Escriba un programa que lea un valor entero positivo y determine:
+                a) Si el entero es un número primo.
+                b) Si el entero es un número de Fibonacci. (Los números de Fibonacci forman una secuencia en la cual cada número es igual a la suma de los dos anteriores, siendo los dos primeros números iguales a 1)
+                </p>
+            <div class="col-auto">
+                <label for="esPrimo" class="visually-hidden"></label>
+                <button class="btn btn-success mb-3" id="esPrimo" onclick="esNumeroPrimo()">Calcular si el número es primo</button>
+                <button class="btn btn-success mb-3" id="esPrimo" onclick="esFibonacci(1000)">Calcular si el número es fibonacci</button>
+            </div> 
+            <p>3. Un entrenador le ha propuesto a un atleta recorrer una ruta de cinco kilómetros durante 10 días, para determinar si es apto para la prueba de 5 Kilómetros o debe buscar otra especialidad. Para considerarlo apto debe cumplir por lo menos una de las siguientes condiciones:
+                - Que en ninguna de las pruebas haga un tiempo mayor a 16 minutos.
+                - Que al menos en una de las pruebas realice un tiempo mayor a 16 minutos.
+                - Que su promedio de tiempos sea menor o igual a 15 minutos.
+            </p>
+            <div class="col-auto">
+                <label for="esPrimo" class="visually-hidden"></label>
+                <button class="btn btn-success mb-3" id="esPrimo" onclick="atletaApto()">Calcular si el atleta es apto</button>
+            </div> 
+            <p>4. Obtener el promedio de calificaciones de un grupo de n alumnos.</p>
+            <div class="col-auto">
+                <label for="esPrimo" class="visually-hidden"></label>
+                <button class="btn btn-success mb-3" id="esPrimo" onclick="promedioNotas()">Calcular promedio de calificaciones</button>
+            </div>
+            <p>5. Se desea obtener el promedio de g grupos que están en un mismo año escolar; siendo que cada grupo puede tener n alumnos que cada alumno puede llevar m materias y que en todas las materias se promedian tres calificaciones para obtener el promedio de la materia. Lo que se desea desplegar es el promedio de los grupos, el promedio de cada grupo y el promedio de cada alumno.</p>
+            <div class="col-auto">
+                <label for="esPrimo" class="visually-hidden"></label>
+                <button class="btn btn-success mb-3" id="esPrimo" onclick="promedios()">Calcular promedio de los grupos</button>
+            </div>
+            <p>6. Una persona que va de compras a la tienda “la rebaja.”, decide llevar un control sobre lo que va comprando, para saber la cantidad de dinero que tendrá que pagar al llegar a la caja. La tienda tiene una promoción del 20% de descuento sobre aquellos artículos cuya etiqueta sea roja. Determinar la cantidad de dinero que esta persona deberá pagar.</p>
+            <div class="col-auto">
+                <label for="esPrimo" class="visually-hidden"></label>
+                <button class="btn btn-success mb-3" id="esPrimo" onclick="controlGast()">Calcular dinero a pagar</button>
+            </div>
+            <p>7. Calcular la suma siguiente:
+                100 + 98 + 96 + 94 + . . . + 0 en este orden</p>
+            <div class="col-auto">
+                <label for="esPrimo" class="visually-hidden"></label>
+                <button class="btn btn-success mb-3" id="esPrimo" onclick="sumarSerieNum()">Calcular suma</button>
+            </div>    
+            <p>8. Suponga que tiene usted una tienda y desea registrar las ventas en su computadora. Diseñe un algoritmo que lea por cada cliente, el monto total de su compra. Al final del día que escriba la cantidad total de ventas y el número de clientes atendidos.</p>
+            <div class="col-auto">
+                <label for="esPrimo" class="visually-hidden"></label>
+                <button class="btn btn-success mb-3" id="esPrimo" onclick="registroTienda()">Calcular total de ventas</button>
+            </div>
+            <p>9. Un jefe de casilla desea determinar cuántas personas de cada una de las secciones que componen su zona asisten el día de las votaciones. Las secciones son: norte, sur y centro. También desea determinar cuál es la sección con mayor número de votantes.</p>
+            <div class="col-auto">
+                <button class="btn btn-success mb-3" id="esPrimo" onclick="controlVotos()">Calcular sección con más votantes</button>
+            </div>
+            <p>10. Leer dos números y ver en la pantalla si están en orden crecientes o decrecientes</p>
+            <div class="col-auto">
+                <label for="esPrimo" class="visually-hidden"></label>
+                <button class="btn btn-success mb-3" id="esPrimo" onclick="ordenDeNumeros()">Calcular orden de los números</button>
+            </div>
+      </form>
+    </div>
+
+    <label for="esPrimo"></label>
+    
+</div>
+    <script src="../js/main.js"></script>
+</body>
+</html>
